@@ -19,11 +19,6 @@ const Topbar = ({ handleDrawerOpen }: Props) => {
       }}
     >
       <Toolbar>
-        <div style={{ marginTop: 10, marginBottom: 10 }}>
-          {/* <Logo fill="black" stroke="green" height="40" width="250" /> */}
-          LOGO
-        </div>
-
         <IconButton
           color="inherit"
           aria-label="open drawer"

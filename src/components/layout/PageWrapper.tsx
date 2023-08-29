@@ -1,29 +1,24 @@
-import {ReactNode, useEffect} from "react";
-import {useAppDispatch} from "../../redux/store";
-import {setAppState} from "../../redux/features/appStateSlice";
+import { ReactNode, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setAppState } from "../../redux/features/appStateSlice";
 
 type Props = {
-    state?: string,
-    children: ReactNode;
-}
+  state?: string,
+  children: ReactNode;
+};
 
-function PageWrapper(props: Props) {
-    // When entering a page, PageWrapper component will load.
-    // We will update the redux appState here.
-    // Children prop of the page wrapper will be the actual page that we need to show!
-    const dispatch = useAppDispatch();
+const PageWrapper = (props: Props) => {
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-        if (props.state) {
-            dispatch(setAppState(props.state))
-        }
-    }, [dispatch, props])
+  useEffect(() => {
+    if (props.state) {
+      dispatch(setAppState(props.state));
+    }
+  }, [dispatch, props]);
 
-    return (
-        <>
-            {props.children}
-        </>
-    )
-}
+  return (
+    <>{props.children}</>
+  );
+};
 
 export default PageWrapper;

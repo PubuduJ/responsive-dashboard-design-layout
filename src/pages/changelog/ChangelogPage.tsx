@@ -1,8 +1,8 @@
-const ChangelogPage = () => {
+function ChangelogPage() {
     return (
-        <>
-
-        </>
+        <div>
+            Change log page
+        </div>
     )
 }
 

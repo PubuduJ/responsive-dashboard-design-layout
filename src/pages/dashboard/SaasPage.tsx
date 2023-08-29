@@ -1,8 +1,8 @@
-const SaasPage = () => {
+function SaasPage() {
     return (
-        <>
-
-        </>
+        <div>
+            Sass Page
+        </div>
     )
 }
 

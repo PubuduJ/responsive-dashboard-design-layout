@@ -1,8 +1,8 @@
-const AnalyticsPage = () => {
+function AnalyticsPage() {
     return (
-        <>
-
-        </>
+        <div>
+            Analytics Page
+        </div>
     )
 }
 

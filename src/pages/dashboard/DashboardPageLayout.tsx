@@ -1,7 +1,9 @@
-const DashboardPageLayout = () => {
+import {Outlet} from "react-router-dom";
+
+function DashboardPageLayout() {
     return (
         <>
-
+            <Outlet/>
         </>
     )
 }

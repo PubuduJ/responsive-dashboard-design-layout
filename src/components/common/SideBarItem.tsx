@@ -24,6 +24,7 @@ const SideBarItem = ({ item, setIsSideBarOpen } : Props) => {
                 }}
                 sx={{
                     "&: hover": {
+                        color: colorConfigs.sideBar.hoverColor,
                         backgroundColor: colorConfigs.sideBar.hoverBg
                     },
                     backgroundColor: appState === item.state ? colorConfigs.sideBar.activeBg : "unset",
@@ -33,7 +34,7 @@ const SideBarItem = ({ item, setIsSideBarOpen } : Props) => {
                 }}
             >
                 <ListItemIcon sx={{
-                    color: colorConfigs.sideBar.activeFontColor,
+                    color: colorConfigs.sideBar.color,
                 }}>
                     {item.sidebarProps.icon && item.sidebarProps.icon}
                 </ListItemIcon>

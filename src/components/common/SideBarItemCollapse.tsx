@@ -30,6 +30,7 @@ const SideBarItemCollapse = ({ item, setIsSideBarOpen } : Props) => {
                     onClick={() => setOpen(!open)}
                     sx={{
                         "&: hover": {
+                            color: colorConfigs.sideBar.hoverColor,
                             backgroundColor: colorConfigs.sideBar.hoverBg
                         },
                         paddingY: "10px",

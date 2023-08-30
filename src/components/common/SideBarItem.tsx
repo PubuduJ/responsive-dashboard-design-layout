@@ -11,7 +11,7 @@ type Props = {
     setIsSideBarOpen: React.Dispatch<SetStateAction<boolean>>;
 };
 
-const SideBarItem = ({ item, setIsSideBarOpen }: Props) => {
+const SideBarItem = ({ item, setIsSideBarOpen } : Props) => {
     const { appState } = useSelector((state: RootState) => state.appState);
 
     return (

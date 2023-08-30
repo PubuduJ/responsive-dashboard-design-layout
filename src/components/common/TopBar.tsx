@@ -6,7 +6,7 @@ type Props = {
     handleDrawerOpen: () => void
 }
 
-const TopBar = ({ handleDrawerOpen }: Props) => {
+const TopBar = ({ handleDrawerOpen } : Props) => {
     return (
         <AppBar
             position="fixed"

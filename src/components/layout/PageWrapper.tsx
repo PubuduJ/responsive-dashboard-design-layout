@@ -7,17 +7,17 @@ type Props = {
   children: ReactNode;
 };
 
-const PageWrapper = (props: Props) => {
+const PageWrapper = ({ state, children }: Props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (props.state) {
-      dispatch(setAppState(props.state));
+    if (state) {
+      dispatch(setAppState(state));
     }
-  }, [dispatch, props]);
+  }, [dispatch, state]);
 
   return (
-      <>{props.children}</>
+      <>{children}</>
   );
 };
 

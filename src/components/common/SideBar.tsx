@@ -16,9 +16,8 @@ type Props = {
     setIsSideBarOpen: React.Dispatch<SetStateAction<boolean>>;
 }
 
-const SideBar = (props: Props) => {
+const SideBar = ({ window, isSideBarOpen, handleDrawerToggle, setIsSideBarOpen } : Props) => {
     const [open, setOpen] = useState(false);
-    const { window, isSideBarOpen, handleDrawerToggle, setIsSideBarOpen } = props;
     const isMobile = useMediaQuery({ query: `(max-width: 600px)` });
 
     useEffect(() => setOpen(isSideBarOpen), [isSideBarOpen]);

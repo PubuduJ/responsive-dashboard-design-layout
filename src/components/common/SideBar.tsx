@@ -1,5 +1,4 @@
 import React, { SetStateAction, useEffect, useState } from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -10,14 +9,14 @@ import appRoutes from '../../routes/appRoutes';
 import SideBarItemCollapse from './SideBarItemCollapse';
 import SideBarItem from './SideBarItem';
 
-interface Props {
+type Props = {
     window?: () => Window;
     isSideBarOpen: boolean;
     handleDrawerToggle: (isOpen: boolean) => void;
     setIsSideBarOpen: React.Dispatch<SetStateAction<boolean>>;
 }
 
-export default function SideBar(props: Props) {
+const SideBar = (props: Props) => {
     const [open, setOpen] = useState(false);
     const { window, isSideBarOpen, handleDrawerToggle, setIsSideBarOpen } = props;
     const isMobile = useMediaQuery({ query: `(max-width: 600px)` });
@@ -39,7 +38,7 @@ export default function SideBar(props: Props) {
                 open={open && isMobile}
                 onClose={onDrawerToggle}
                 ModalProps={{
-                    keepMounted: true, // Better open performance on mobile.
+                    keepMounted: true,
                 }}
                 sx={{
                     display: { xs: 'block', sm: 'none' },
@@ -99,3 +98,5 @@ export default function SideBar(props: Props) {
         </Box>
     );
 }
+
+export default SideBar;

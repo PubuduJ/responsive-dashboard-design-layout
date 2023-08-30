@@ -48,7 +48,7 @@ const SideBar = (props: Props) => {
                 <List disablePadding style={{
                     paddingTop: 57,
                     fontVariant: 'h6',
-                    color: colorConfigs.sidebar.inactiveFontColor,
+                    color: colorConfigs.sideBar.inactiveFontColor,
                     backgroundColor: colorConfigs.mainBg
                 }}>
                     {appRoutes.map((route, index) => (
@@ -80,7 +80,7 @@ const SideBar = (props: Props) => {
                 <List disablePadding style={{
                     paddingTop: 65,
                     fontVariant: 'h6',
-                    color: colorConfigs.sidebar.inactiveFontColor,
+                    color: colorConfigs.sideBar.inactiveFontColor,
                     backgroundColor: colorConfigs.mainBg
                 }}>
                     {appRoutes.map((route, index) => (

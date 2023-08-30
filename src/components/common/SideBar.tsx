@@ -42,14 +42,14 @@ const SideBar = (props: Props) => {
                 }}
                 sx={{
                     display: { xs: 'block', sm: 'none' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: sizeConfigs.sidebar.width, backgroundColor: "#E5E9F1" },
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: sizeConfigs.sidebar.width, backgroundColor: colorConfigs.mainBg },
                 }}
             >
                 <List disablePadding style={{
                     paddingTop: 57,
                     fontVariant: 'h6',
                     color: colorConfigs.sidebar.inactiveFontColor,
-                    backgroundColor: "#E5E9F1"
+                    backgroundColor: colorConfigs.mainBg
                 }}>
                     {appRoutes.map((route, index) => (
                         route.sidebarProps ? (
@@ -70,7 +70,7 @@ const SideBar = (props: Props) => {
                     '& .MuiDrawer-paper': {
                         width: sizeConfigs.sidebar.width,
                         boxSizing: 'border-box',
-                        backgroundColor: "#E5E9F1",
+                        backgroundColor: colorConfigs.mainBg,
                     },
                 }}
                 variant="persistent"
@@ -81,7 +81,7 @@ const SideBar = (props: Props) => {
                     paddingTop: 65,
                     fontVariant: 'h6',
                     color: colorConfigs.sidebar.inactiveFontColor,
-                    backgroundColor: "#E5E9F1"
+                    backgroundColor: colorConfigs.mainBg
                 }}>
                     {appRoutes.map((route, index) => (
                         route.sidebarProps ? (

@@ -6,6 +6,7 @@ import TopBar from "../common/TopBar";
 import { useCallback, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useDispatch } from "react-redux";
+import Link from '@mui/material/Link';
 import {setBooleanValue} from "../../redux/features/booleanValueSlice";
 
 const MainLayout = () => {
@@ -76,7 +77,7 @@ const MainLayout = () => {
                     width: isSideBarOpen && !isMobile ? `calc(100% - ${sizeConfigs.sidebar.width})` : "100%",
                 }}
             >
-                <Typography variant={"caption"}>© {new Date().getFullYear()} Pubudu Janith</Typography>
+                <Typography variant={"caption"}>© {new Date().getFullYear()} <Link href="https://www.linkedin.com/in/pubudujanith/">PubuduJ.</Link> All rights reserved.</Typography>
             </Box>
         </>
     );

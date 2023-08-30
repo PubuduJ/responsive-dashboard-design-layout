@@ -77,7 +77,7 @@ const MainLayout = () => {
                     width: isSideBarOpen && !isMobile ? `calc(100% - ${sizeConfigs.sideBar.width})` : "100%",
                 }}
             >
-                <Typography fontWeight={"bold"} variant={"body2"}>© {new Date().getFullYear()} <Link href="https://www.linkedin.com/in/pubudujanith/">PubuduJ.</Link> All rights reserved.</Typography>
+                <Typography fontWeight={"bold"} variant={"body2"}>© {new Date().getFullYear()} <Link href="https://www.linkedin.com/in/pubudujanith/">PubuduJ.</Link> All Rights Reserved.</Typography>
             </Box>
         </>
     );

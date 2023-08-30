@@ -1,4 +1,4 @@
-import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
+import {AppBar, IconButton, Toolbar} from "@mui/material";
 import colorConfigs from "../../configs/colorConfigs";
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -26,9 +26,6 @@ const TopBar = ({ handleDrawerOpen }: Props) => {
                 >
                     <MenuIcon />
                 </IconButton>
-
-                <div style={{ marginLeft: "auto" }}>
-                </div>
             </Toolbar>
         </AppBar>
     );

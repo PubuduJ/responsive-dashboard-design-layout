@@ -19,6 +19,6 @@ const booleanSlice = createSlice({
     },
   });
 
-  export const { setBooleanValue } = booleanSlice.actions;
+export const { setBooleanValue } = booleanSlice.actions;
 
-  export default booleanSlice.reducer;
+export default booleanSlice.reducer;

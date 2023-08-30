@@ -10,15 +10,12 @@ import {setBooleanValue} from "../../redux/features/booleanValueSlice";
 
 const MainLayout = () => {
     const dispatch = useDispatch();
-
-
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
     const isMobile = useMediaQuery({ query: `(max-width: 600px)` });
 
     const handleDrawerOpen = useCallback(() => {
         setIsSideBarOpen(!isSideBarOpen);
         dispatch(setBooleanValue(!isSideBarOpen))
-
     }, [isSideBarOpen]);
 
     const handleDrawerToggle = useCallback((status: boolean) => {
@@ -48,11 +45,9 @@ const MainLayout = () => {
                     flexGrow={1}
                     width={"100px"}
                     bgcolor={"#E5E9F1"}
-                    // Change 1. Make mui box position to relative.
                     position={"relative"}
                 >
                     <Box
-                        // Change 2. Add A log as a background image of the mui box.
                         width={(window.innerWidth > 600) ? "915px" : "750px"}
                         height={"100%"}
                         right={0}
@@ -63,7 +58,6 @@ const MainLayout = () => {
                         }}
                     ></Box>
                     <Box
-                        // Change 3. Put outlet to a mui box.
                         position={"relative"}
                     >
                         <Outlet />

@@ -62,7 +62,6 @@ const SideBar = (props: Props) => {
                     ))}
                 </List>
             </Drawer>
-
             <Drawer
                 sx={{
                     backgroundColor: "red",

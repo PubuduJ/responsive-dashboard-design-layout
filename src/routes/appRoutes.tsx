@@ -9,11 +9,9 @@ import DashboardIndex from "../pages/dashboard/DashboardIndex";
 import ChangelogPage from "../pages/changelog/ChangelogPage";
 import AnalyticsPage from "../pages/dashboard/AnalyticsPage";
 import SaasPage from "../pages/dashboard/SaasPage";
-// Define all the routes in the application using appRoutes array.
 
 const appRoutes: RouteType[] = [
     {
-        // This is the index route, path will be same path as "/"
         index: true,
         element: <HomePage/>,
         state: "home",
@@ -23,8 +21,6 @@ const appRoutes: RouteType[] = [
         }
     },
     {
-        // Dashboard page has its own children.
-        // Hence, Dashboard page layout has its own outlet to inject those as well.
         path: "/dashboard",
         element: <DashboardPageLayout/>,
         state: "dashboard",
@@ -33,7 +29,6 @@ const appRoutes: RouteType[] = [
             icon: <DashboardOutlinedIcon/>
         },
         child: [
-            // when path is "/dashboard", this element will be displayed in the main container.
             {
                 index: true,
                 element: <DashboardIndex/>,
@@ -66,8 +61,6 @@ const appRoutes: RouteType[] = [
         ]
     },
     {
-        // When path is "/changelog" this element will be displayed in the main container.
-        path: "/changelog",
         element: <ChangelogPage/>,
         state: "changelog",
         sidebarProps: {

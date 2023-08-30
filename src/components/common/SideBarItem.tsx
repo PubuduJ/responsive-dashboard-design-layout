@@ -24,6 +24,7 @@ const SideBarItem = ({ item, setIsSideBarOpen } : Props) => {
                 }}
                 sx={{
                     "&: hover": {
+                        color: colorConfigs.sideBar.color,
                         backgroundColor: colorConfigs.sideBar.hoverBg
                     },
                     backgroundColor: appState === item.state ? colorConfigs.sideBar.activeBg : "unset",

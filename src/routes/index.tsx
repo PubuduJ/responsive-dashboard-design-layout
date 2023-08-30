@@ -11,7 +11,6 @@ function generateRoute(routes: RouteType[]) {
                 route.index ? (
                     <Route
                         key={index}
-                        // This is an index route.
                         index
                         element={
                             <PageWrapper state={route.state}>
@@ -22,7 +21,6 @@ function generateRoute(routes: RouteType[]) {
                 ) : (
                     <Route
                         key={index}
-                        // This is not an index route.
                         path={route.path}
                         element={
                             <PageWrapper state={route.child ? undefined : route.state}>

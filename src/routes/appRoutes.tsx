@@ -1,18 +1,11 @@
-import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined';
-import AddHomeOutlinedIcon from '@mui/icons-material/AddHomeOutlined';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import Person3Icon from '@mui/icons-material/Person3';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import SettingsIcon from '@mui/icons-material/Settings';
 import {RouteType} from "./config";
-import HomePage from "../pages/home/HomePage";
 import Admin from "../pages/admin/Admin";
-import DashboardPageLayout from "../pages/dashboard/DashboardPageLayout";
-import DefaultPage from "../pages/dashboard/DefaultPage";
-import DashboardIndex from "../pages/dashboard/DashboardIndex";
-import ChangelogPage from "../pages/changelog/ChangelogPage";
-import AnalyticsPage from "../pages/dashboard/AnalyticsPage";
-import SaasPage from "../pages/dashboard/SaasPage";
 import UserManagement from "../pages/user/UserManagement";
 import RoleManagement from "../pages/user/RoleManagement";
 import UserPageLayout from "../pages/user/UserPageLayout";
@@ -21,15 +14,26 @@ import AnalyticalReports from "../pages/report/AnalyticalReports";
 import InternalReports from "../pages/report/InternalReports";
 import ProposalReports from "../pages/report/ProposalReports";
 import SalesReports from "../pages/report/SalesReports";
+import Dashboard from "../pages/dashboard/Dashboard";
+import Settings from "../pages/settings/Settings";
 
 const appRoutes: RouteType[] = [
     {
         index: true,
-        element: <HomePage/>,
+        element: <Dashboard/>,
         state: "home",
         sidebarProps: {
-            displayText: "Home",
-            icon: <AddHomeOutlinedIcon/>
+            displayText: "Dashboard",
+            icon: <DashboardIcon/>
+        }
+    },
+    {
+        path: "/dashboard",
+        element: <Dashboard/>,
+        state: "dashboard",
+        sidebarProps: {
+            displayText: "Dashboard",
+            icon: <DashboardIcon/>
         }
     },
     {
@@ -67,6 +71,15 @@ const appRoutes: RouteType[] = [
                 }
             }
         ]
+    },
+    {
+        path: "/settings",
+        element: <Settings/>,
+        state: "settings",
+        sidebarProps: {
+            displayText: "Settings",
+            icon: <SettingsIcon/>
+        }
     },
     {
         path: "/reports",
@@ -110,55 +123,6 @@ const appRoutes: RouteType[] = [
                 }
             }
         ]
-    },
-    {
-        path: "/dashboard",
-        element: <DashboardPageLayout/>,
-        state: "dashboard",
-        sidebarProps: {
-            displayText: "Dashboard",
-            icon: <DashboardOutlinedIcon/>
-        },
-        child: [
-            {
-                index: true,
-                element: <DashboardIndex/>,
-                state: "dashboard.index"
-            },
-            {
-                path: "/dashboard/default",
-                element: <DefaultPage/>,
-                state: "dashboard.default",
-                sidebarProps: {
-                    displayText: "Default"
-                }
-            },
-            {
-                path: "/dashboard/analytics",
-                element: <AnalyticsPage/>,
-                state: "dashboard.analytics",
-                sidebarProps: {
-                    displayText: "AnalyticsPage"
-                }
-            },
-            {
-                path: "/dashboard/sass",
-                element: <SaasPage/>,
-                state: "dashboard.sass",
-                sidebarProps: {
-                    displayText: "SassPage"
-                }
-            }
-        ]
-    },
-    {
-        path: "/changelog",
-        element: <ChangelogPage/>,
-        state: "changelog",
-        sidebarProps: {
-            displayText: "Changelog",
-            icon: <FormatListBulletedOutlinedIcon/>
-        }
     }
 ]
 

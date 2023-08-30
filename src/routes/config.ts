@@ -1,11 +1,11 @@
 import {ReactNode} from "react";
 // Define the RouteType.
-// appRoutes RouteType array is used to define routes as well as used in SideBar component.
+// appRoutes RouteType array is used to define routes as well as it is used in SideBar component.
 
 export type RouteType = {
     // index is used to denote whether it is index route or not.
     index?: boolean,
-    // path is the absolute path from the "/", since we inject routes under the "/".
+    // path is the absolute path from the "/", since inject routes under the "/".
     path?: string,
     // element is used to represent the element prop in the route.
     element: ReactNode,

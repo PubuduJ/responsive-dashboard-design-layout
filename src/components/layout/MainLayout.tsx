@@ -30,7 +30,7 @@ const MainLayout = () => {
                 <Box
                     component="nav"
                     sx={{
-                        width: isSideBarOpen && !isMobile ? sizeConfigs.sidebar.width : 0,
+                        width: isSideBarOpen && !isMobile ? sizeConfigs.sideBar.width : 0,
                     }}
                 >
                     <SideBar
@@ -73,8 +73,8 @@ const MainLayout = () => {
                 position={"fixed"}
                 bottom={0}
                 sx={{
-                    left: isSideBarOpen && !isMobile ? sizeConfigs.sidebar.width : 0,
-                    width: isSideBarOpen && !isMobile ? `calc(100% - ${sizeConfigs.sidebar.width})` : "100%",
+                    left: isSideBarOpen && !isMobile ? sizeConfigs.sideBar.width : 0,
+                    width: isSideBarOpen && !isMobile ? `calc(100% - ${sizeConfigs.sideBar.width})` : "100%",
                 }}
             >
                 <Typography fontWeight={"bold"} variant={"body2"}>© {new Date().getFullYear()} <Link href="https://www.linkedin.com/in/pubudujanith/">PubuduJ.</Link> All rights reserved.</Typography>

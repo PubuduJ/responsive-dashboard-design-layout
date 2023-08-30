@@ -41,7 +41,7 @@ const SideBar = ({ window, isSideBarOpen, handleDrawerToggle, setIsSideBarOpen }
                 }}
                 sx={{
                     display: { xs: 'block', sm: 'none' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: sizeConfigs.sidebar.width, backgroundColor: colorConfigs.sideBar.bg },
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: sizeConfigs.sideBar.width, backgroundColor: colorConfigs.sideBar.bg },
                 }}
             >
                 <List disablePadding style={{
@@ -64,10 +64,10 @@ const SideBar = ({ window, isSideBarOpen, handleDrawerToggle, setIsSideBarOpen }
             <Drawer
                 sx={{
                     backgroundColor: "red",
-                    width: sizeConfigs.sidebar.width,
+                    width: sizeConfigs.sideBar.width,
                     flexShrink: 0,
                     '& .MuiDrawer-paper': {
-                        width: sizeConfigs.sidebar.width,
+                        width: sizeConfigs.sideBar.width,
                         boxSizing: 'border-box',
                         backgroundColor: colorConfigs.sideBar.bg,
                     },

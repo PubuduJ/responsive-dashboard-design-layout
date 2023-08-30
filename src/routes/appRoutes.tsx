@@ -3,6 +3,7 @@ import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBullet
 import AddHomeOutlinedIcon from '@mui/icons-material/AddHomeOutlined';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import Person3Icon from '@mui/icons-material/Person3';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import {RouteType} from "./config";
 import HomePage from "../pages/home/HomePage";
 import Admin from "../pages/admin/Admin";
@@ -15,6 +16,11 @@ import SaasPage from "../pages/dashboard/SaasPage";
 import UserManagement from "../pages/user/UserManagement";
 import RoleManagement from "../pages/user/RoleManagement";
 import UserPageLayout from "../pages/user/UserPageLayout";
+import ReportPageLayout from "../pages/report/ReportPageLayout";
+import AnalyticalReports from "../pages/report/AnalyticalReports";
+import InternalReports from "../pages/report/InternalReports";
+import ProposalReports from "../pages/report/ProposalReports";
+import SalesReports from "../pages/report/SalesReports";
 
 const appRoutes: RouteType[] = [
     {
@@ -58,6 +64,49 @@ const appRoutes: RouteType[] = [
                 state: "user.role-management",
                 sidebarProps: {
                     displayText: "Role Management",
+                }
+            }
+        ]
+    },
+    {
+        path: "/reports",
+        element: <ReportPageLayout/>,
+        state: "Reports",
+        sidebarProps: {
+            displayText: "Reports",
+            icon: <LibraryBooksIcon/>
+        },
+        child: [
+            {
+                path: "/reports/analytical-reports",
+                element: <AnalyticalReports/>,
+                state: "reports.analytical-reports",
+                sidebarProps: {
+                    displayText: "Analytical Reports",
+                },
+            },
+            {
+                path: "/reports/internal-reports",
+                element: <InternalReports/>,
+                state: "reports.internal-reports",
+                sidebarProps: {
+                    displayText: "Internal Reports",
+                }
+            },
+            {
+                path: "/reports/proposal-reports",
+                element: <ProposalReports/>,
+                state: "reports.proposal-reports",
+                sidebarProps: {
+                    displayText: "Proposal Reports",
+                }
+            },
+            {
+                path: "/reports/sales-reports",
+                element: <SalesReports/>,
+                state: "reports.sales-reports",
+                sidebarProps: {
+                    displayText: "Sales Reports",
                 }
             }
         ]

@@ -7,8 +7,8 @@ import sizeConfigs from '../../configs/sizeConfigs';
 import { useMediaQuery } from 'react-responsive';
 import colorConfigs from '../../configs/colorConfigs';
 import appRoutes from '../../routes/appRoutes';
-import SidebarItemCollapse from './SidebarItemCollapse';
-import SidebarItem from './SidebarItem';
+import SideBarItemCollapse from './SideBarItemCollapse';
+import SideBarItem from './SideBarItem';
 
 interface Props {
     window?: () => Window;
@@ -17,7 +17,7 @@ interface Props {
     setIsSideBarOpen: React.Dispatch<SetStateAction<boolean>>;
 }
 
-export default function Sidebar(props: Props) {
+export default function SideBar(props: Props) {
     const [open, setOpen] = useState(false);
     const { window, isSideBarOpen, handleDrawerToggle, setIsSideBarOpen } = props;
     const isMobile = useMediaQuery({ query: `(max-width: 600px)` });
@@ -55,9 +55,9 @@ export default function Sidebar(props: Props) {
                     {appRoutes.map((route, index) => (
                         route.sidebarProps ? (
                             route.child ? (
-                                <SidebarItemCollapse item={route} key={index} setIsSideBarOpen={setIsSideBarOpen} />
+                                <SideBarItemCollapse item={route} key={index} setIsSideBarOpen={setIsSideBarOpen} />
                             ) : (
-                                <SidebarItem item={route} key={index} setIsSideBarOpen={setIsSideBarOpen} />
+                                <SideBarItem item={route} key={index} setIsSideBarOpen={setIsSideBarOpen} />
                             )
                         ) : null
                     ))}
@@ -88,9 +88,9 @@ export default function Sidebar(props: Props) {
                     {appRoutes.map((route, index) => (
                         route.sidebarProps ? (
                             route.child ? (
-                                <SidebarItemCollapse item={route} key={index} setIsSideBarOpen={setIsSideBarOpen} />
+                                <SideBarItemCollapse item={route} key={index} setIsSideBarOpen={setIsSideBarOpen} />
                             ) : (
-                                <SidebarItem item={route} key={index} setIsSideBarOpen={setIsSideBarOpen} />
+                                <SideBarItem item={route} key={index} setIsSideBarOpen={setIsSideBarOpen} />
                             )
                         ) : null
                     ))}

@@ -4,7 +4,7 @@ import colorConfigs from "../../configs/colorConfigs";
 import { RouteType } from "../../routes/config";
 import ExpandLessOutlinedIcon from '@mui/icons-material/ExpandLessOutlined';
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
-import SidebarItem from "./SidebarItem";
+import SideBarItem from "./SideBarItem";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 
@@ -13,7 +13,7 @@ type Props = {
     setIsSideBarOpen: React.Dispatch<SetStateAction<boolean>>;
 };
 
-const SidebarItemCollapse = ({ item, setIsSideBarOpen }: Props) => {
+const SideBarItemCollapse = ({ item, setIsSideBarOpen }: Props) => {
     const [open, setOpen] = useState(false);
 
     const { appState } = useSelector((state: RootState) => state.appState);
@@ -57,9 +57,9 @@ const SidebarItemCollapse = ({ item, setIsSideBarOpen }: Props) => {
                         {item.child?.map((route, index) => (
                             route.sidebarProps ? (
                                 route.child ? (
-                                    <SidebarItemCollapse item={route} key={index} setIsSideBarOpen={setIsSideBarOpen}/>
+                                    <SideBarItemCollapse item={route} key={index} setIsSideBarOpen={setIsSideBarOpen}/>
                                 ) : (
-                                    <SidebarItem item={route} key={index} setIsSideBarOpen={setIsSideBarOpen}/>
+                                    <SideBarItem item={route} key={index} setIsSideBarOpen={setIsSideBarOpen}/>
                                 )
                             ) : null
                         ))}
@@ -70,4 +70,4 @@ const SidebarItemCollapse = ({ item, setIsSideBarOpen }: Props) => {
     );
 };
 
-export default SidebarItemCollapse;
+export default SideBarItemCollapse;

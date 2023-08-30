@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import sizeConfigs from "../../configs/sizeConfigs";
-import Sidebar from "../common/Sidebar";
-import Topbar from "../common/Topbar";
+import SideBar from "../common/SideBar";
+import TopBar from "../common/TopBar";
 import { useCallback, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useDispatch } from "react-redux";
@@ -27,7 +27,7 @@ const MainLayout = () => {
 
     return (
         <>
-            <Topbar handleDrawerOpen={handleDrawerOpen} />
+            <TopBar handleDrawerOpen={handleDrawerOpen} />
             <Box sx={{ display: "flex", backgroundColor: "#E5E9F1" }}>
                 <Box
                     component="nav"
@@ -35,7 +35,7 @@ const MainLayout = () => {
                         width: isSideBarOpen && !isMobile ? sizeConfigs.sidebar.width : 0,
                     }}
                 >
-                    <Sidebar
+                    <SideBar
                         isSideBarOpen={isSideBarOpen}
                         handleDrawerToggle={handleDrawerToggle}
                         setIsSideBarOpen={setIsSideBarOpen}

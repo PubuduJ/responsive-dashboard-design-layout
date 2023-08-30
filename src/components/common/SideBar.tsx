@@ -46,7 +46,7 @@ const SideBar = (props: Props) => {
                 }}
             >
                 <List disablePadding style={{
-                    paddingTop: 70,
+                    paddingTop: 57,
                     fontVariant: 'h6',
                     color: colorConfigs.sidebar.inactiveFontColor,
                     backgroundColor: "#E5E9F1"
@@ -78,7 +78,7 @@ const SideBar = (props: Props) => {
                 open={open && !isMobile}
             >
                 <List disablePadding style={{
-                    paddingTop: 70,
+                    paddingTop: 65,
                     fontVariant: 'h6',
                     color: colorConfigs.sidebar.inactiveFontColor,
                     backgroundColor: "#E5E9F1"

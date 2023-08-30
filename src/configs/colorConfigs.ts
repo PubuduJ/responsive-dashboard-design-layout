@@ -6,8 +6,7 @@ const colorConfigs = {
     sideBar: {
         bg: "#4c6c8d",
         color: "#ffffff",
-        hoverColor: "#fcd5a7",
-        hoverBg: "rgba(245,222,179,0.2)",
+        hoverBg: "#F5DEB333",
         activeBg: "#bbd8f5",
         inactiveFontColor: "#ffffff",
         activeFontColor: "#000000",

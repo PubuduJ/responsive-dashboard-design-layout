@@ -17,7 +17,7 @@ const PageWrapper = (props: Props) => {
   }, [dispatch, props]);
 
   return (
-    <>{props.children}</>
+      <>{props.children}</>
   );
 };
 

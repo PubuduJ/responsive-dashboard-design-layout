@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import appStateSlice from "./features/appStateSlice";
+import booleanValueSlice from "./features/booleanValueSlice";
 
 export const store = configureStore({
     reducer: {
-        appState: appStateSlice
+        appState: appStateSlice,
+        booleanValue: booleanValueSlice,
     }
 });
 

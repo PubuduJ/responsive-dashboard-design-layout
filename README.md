@@ -12,7 +12,7 @@ sample description
 
 - Mobile View - Portrait<br>
 
-<img src="assets/mobile-view-portrait-1.png" alt="roll-back" width="400px"/><img src="assets/mobile-view-portrait-2.png" alt="roll-back" width="400px"/>
+<img src="assets/mobile-view-portrait-1.png" alt="roll-back" width="200px"/><img src="assets/mobile-view-portrait-2.png" alt="roll-back" width="200px"/>
 
 - Mobile View - Landscape<br>
 

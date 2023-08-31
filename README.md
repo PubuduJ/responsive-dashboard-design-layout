@@ -9,15 +9,15 @@ The **theme, styling and navigation bar layout** can be further adjusted to meet
 
 - Desktop View<br>
 
-<img src="assets/desktop-view.png" alt="roll-back" width="800px"/>
+<img src="assets/desktop-view.png" alt="desktop-view" width="800px"/>
 
 - Mobile View - Portrait<br>
 
-<img src="assets/mobile-view-portrait-1.png" alt="roll-back" width="200px"/><img src="assets/mobile-view-portrait-2.png" alt="roll-back" width="200px"/>
+<img src="assets/mobile-view-portrait-1.png" alt="mobile-view-portrait-1" width="200px"/><img src="assets/mobile-view-portrait-2.png" alt="mobile-view-portrait-2" width="200px"/>
 
 - Mobile View - Landscape<br>
 
-<img src="assets/mobile-view-landscape-1.png" alt="roll-back" width="400px"/><img src="assets/mobile-view-landscape-2.png" alt="roll-back" width="400px"/>
+<img src="assets/mobile-view-landscape-1.png" alt="mobile-view-landscape-2" width="400px"/><img src="assets/mobile-view-landscape-2.png" alt="mobile-view-landscape-2" width="400px"/>
 
 ## Used Technologies
 

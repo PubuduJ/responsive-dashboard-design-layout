@@ -6,6 +6,18 @@ sample description
 
 #### User Interfaces
 
+- Desktop View<br>
+
+<img src="assets/desktop-view.png" alt="roll-back" width="800px"/>
+
+- Mobile View - Portrait<br>
+
+<img src="assets/mobile-view-portrait-1.png" alt="roll-back" width="400px"/><img src="assets/mobile-view-portrait-2.png" alt="roll-back" width="400px"/>
+
+- Mobile View - Landscape<br>
+
+<img src="assets/mobile-view-landscape-1.png" alt="roll-back" width="400px"/><img src="assets/mobile-view-landscape-2.png" alt="roll-back" width="400px"/>
+
 ## Used Technologies
 
 - React

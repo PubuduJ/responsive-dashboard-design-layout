@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-sample description
+This is a **completely customizable responsive dashboard design layout** that can be used with **any mobile, tablet, or desktop screen.** 
+The **theme, styling and navigation bar layout** can be further adjusted to meet the preferences of the user.
 
 #### User Interfaces
 

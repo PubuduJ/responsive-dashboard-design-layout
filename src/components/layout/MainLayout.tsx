@@ -46,23 +46,8 @@ const MainLayout = () => {
                     flexGrow={1}
                     width={"100px"}
                     bgcolor={"#E5E9F1"}
-                    position={"relative"}
                 >
-                    <Box
-                        width={(window.innerWidth > 600) ? "915px" : "750px"}
-                        height={"100%"}
-                        right={0}
-                        position={"absolute"}
-                        sx={{
-                            backgroundImage: 'url(/Logo-Big-A.svg)',
-                            backgroundRepeat: "no-repeat"
-                        }}
-                    ></Box>
-                    <Box
-                        position={"relative"}
-                    >
-                        <Outlet />
-                    </Box>
+                    <Outlet />
                 </Box>
             </Box>
             <Box
